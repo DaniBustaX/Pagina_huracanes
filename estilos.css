@@ -1,0 +1,245 @@
+/* Importamos Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Estilo del encabezado y sección hero */
+header .hero {
+    background: linear-gradient(1deg, rgba(0, 82, 204, 0.8), rgba(0, 0, 0, 0.7)), 
+    url('https://media.gq.com.mx/photos/62f9477bedeae89b4c585881/16:9/w_2560%2Cc_limit/GettyImages-1040975032%2520(1).jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header .hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 1.5s ease;
+}
+
+header .hero p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    animation: fadeInUp 1.5s ease;
+}
+
+header .hero .btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 2s ease;
+}
+
+header .hero .btn:hover {
+    background-color: #ff8787;
+    transform: translateY(-5px);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.info img {
+    width: 100%;
+    height: auto;
+    max-width: 900px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+.info img:hover {
+    transform: scale(1.05);
+}
+
+/* Sección "¿Para qué sirven los huracanes?" */
+#funcion-huracan {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 900px;
+    margin: 40px auto;
+    border-left: 5px solid #007BFF;
+    transition: all 0.3s ease;
+}
+
+#funcion-huracan:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#funcion-huracan h2 {
+    color: #007BFF;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+#funcion-huracan p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Estilo para la lista ordenada */
+#funcion-huracan ol {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+#funcion-huracan ol li {
+    background-color: #f9f9f9;
+    border-left: 4px solid #007BFF;
+    margin-bottom: 10px;
+    padding: 12px 18px;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    color: #555;
+    transition: background-color 0.3s ease;
+}
+
+#funcion-huracan ol li:hover {
+    background-color: #eef6ff;
+}
+
+/* Categorías */
+.categories .category-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.categories .category {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.categories .category:hover {
+    transform: translateY(-5px);
+}
+
+.categories .category h3 {
+    font-size: 1.7em;
+    color: #00796b;
+    margin-bottom: 10px;
+}
+
+.categories .category p {
+    font-size: 1.2em;
+    color: #004d40;
+}
+
+/* Consejos de seguridad */
+.safety ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2em;
+}
+
+.safety ul li {
+    background: #ffe0b2;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.safety ul li:hover {
+    transform: translateY(-3px);
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #004d40;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+footer .btn:hover {
+    background-color: #ff8a65;
+    transform: translateY(-3px);
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+    header .hero h1 {
+        font-size: 2.5em;
+    }
+
+    header .hero p {
+        font-size: 1.2em;
+    }
+
+    .categories .category-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #funcion-huracan {
+        padding: 30px;
+    }
+}
